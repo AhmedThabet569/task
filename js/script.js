@@ -47,9 +47,20 @@ $(document).ready(function () {
     visibleOnly: false,
   });
 });
-
+// make loading
 $(window).on("load", function () {
-  $('.loader').delay(500).fadeOut(500);
+  setTimeout(function () {
+    // allowing 3 secs to fade out loader
+    $(".page-loader").fadeOut("slow");
+  }, 3500);
+});
+
+// get selector tab
+	$("#tab_selector").on("change", function (e) {
+    $("#v-pills-tab button").eq($(this).val()).tab("show");
+  });
+$(window).on("load", function () {
+ 
 
   //wow animate
   wow = new WOW({

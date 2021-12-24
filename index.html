@@ -21,7 +21,10 @@
 </head>
 
 <body>
-
+<div class="page-loader">
+  <div class="spinner"></div>
+  <div class="txt">انتظر قليلا</div>
+</div>
   <!-- start header -->
   <header>
 
@@ -103,7 +106,7 @@
         <p class="text-center"> المناسبة الحالية</p>
         <div class="design-tabs">
 
-          <div class="nav flex-row nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <div class="nav flex-row nav-pills hidden-xs" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 
             <button class="nav-link active" id="v-pills-1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-1"
               type="button" role="tab" aria-controls="v-pills-1" aria-selected="true"> <span>تصاميم عيد الفطر
@@ -114,8 +117,18 @@
               role="tab" aria-controls="v-pills-3" aria-selected="false"><span>تصاميم البيعة </span></button>
             <button class="nav-link" id="v-pills-4-tab" data-bs-toggle="pill" data-bs-target="#v-pills-4" type="button"
               role="tab" aria-controls="v-pills-4" aria-selected="false"><span>تصاميم رمضان</span></button>
-
           </div>
+          
+            <select class="mb10 form-control visible-xs mt-5" id="tab_selector">
+              <option value="تصاميم عيد الاضحي المبارك">تصاميم عيد الاضحي المبارك</option>
+              <option value="تصاميم عيد الفطر المبارك">تصاميم عيد الفطر المبارك</option>
+              <option value="تصاميم  البيعة">تصاميم البيعة</option>
+              <option value="تصاميم رمضان   ">تصاميم رمضان</option>
+
+            </select>
+
+            
+            
           <div class="select-card mt-5 mb-5">
             <p class="pb-4">اختر البطاقة التي تريد طباعة اسمك عليها</p>
             <div class="form-floating ">
